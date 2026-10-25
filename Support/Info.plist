@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>local.clippy.app</string>
+    <key>CFBundleName</key>
+    <string>Clippy</string>
+    <key>CFBundleDisplayName</key>
+    <string>Clippy</string>
+    <key>CFBundleExecutable</key>
+    <string>Clippy</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.1</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>14.0</string>
+    <!-- Menu-bar app: no Dock icon. -->
+    <key>LSUIElement</key>
+    <true/>
+    <!-- Shown when macOS asks permission to reach a model server elsewhere on your network. -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Clippy connects to the AI model server you choose on your local network.</string>
+    <!-- Local model servers usually speak plain http. -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsLocalNetworking</key>
+        <true/>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+</dict>
+</plist>

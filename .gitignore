@@ -1,0 +1,9 @@
+.build/
+.swiftpm/
+*.acs
+*.ACS
+*.act
+*.ACT
+Packs/*/
+!Packs/README.md
+build/
